@@ -1,5 +1,6 @@
 import java.util.*;
 import java.util.concurrent.*;
+import java.util.function.Consumer;
 
 /**
  * Demonstrates Message Queue Pattern - Essential for asynchronous communication
@@ -42,6 +43,10 @@ public class MessageQueue {
         public int size() {
             return queue.size();
         }
+
+        public int getCapacity() {
+            return capacity;
+        }
     }
 
     // Message with metadata
@@ -78,6 +83,10 @@ public class MessageQueue {
 
         public int getRetryCount() {
             return retryCount;
+        }
+
+        public long getTimestamp() {
+            return timestamp;
         }
 
         @Override
