@@ -22,7 +22,9 @@ public class MaxSubarray {
     }
 
     /**
-     * Kadane's Algorithm: O(n) Time Complexity
+     * Kadane's Algorithm: 
+     * Time Complexity: O(n)
+     * Space Complexity: O(1)
      */
     public static int maxSubArray(int[] nums) {
         // Initialize with the first element
